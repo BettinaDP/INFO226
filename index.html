@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script data-require="angular.js@*" data-semver="2.0.0" src="https://code.angularjs.org/2.0.0-snapshot/angular2.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <title></title>
+</head>
+
+<body>
+  <!--LOGIN FORM-->
+  <div id="login">
+    <header>
+      <h1>Happy Building Company</h1>
+    </header>
+	
+    <content>
+	
+      <form>
+        <fieldset>
+          <legend> Sign In </legend>
+          <label>Username:</label>
+          <input type="text" name="username">
+          <br>
+          <label>Password:</label>
+          <input type="text" name="password">
+          <br>
+          <br>
+          <input id=submitbutton type="submit" value="Submit">
+          <input id=resetbutton type="reset" value="Reset">
+        </fieldset>
+      </form>
+	  
+    </content>
+	
+  </div>
+  
+  <br>
+  <br>
+  
+  <!--BUILDING DIRECTORY-->
+  <div id="directory">
+    <table>
+	
+      <tr>
+        <td> Building name </td>
+        <td> Address</td>
+        <td> View Building </td>
+      </tr>
+	  
+      <tr>
+        <td> ABC </td>
+        <td> 123</td>
+        <td>
+          <input id=viewbuildingbutton type="submit" value="View"> </td>
+      </tr>
+	  
+    </table>
+	
+  </div> <!--End of Building Directory-->
+  
+  <br>
+  <br>
+  
+  <!--SIGNOUT BUTTON-->
+  <div id="signout">
+    <input id=signoutbutton type="reset" value="Sign Out">
+  </div>
+  
+  <br>
+  <br>
+  
+  <!--BUILDING FORM-->
+  <div id="buildingForm">
+  
+    <header>
+      <h1>Happy Building Company</h1>
+    </header>
+	
+    <content>
+	
+      <form>
+        <fieldset>
+          <legend>Building Form</legend>
+          <label>Type of Building:</label>
+          <input type="text" name="buildingType" value="Type of the building">
+          <br>
+          <label>Date of Construction:</label>
+          <input type="text" name="constructionDate" value="Date of building construction">
+          <br>
+          <br>
+          <input id="addProject" type="submit" value="Add Project">
+          <br>
+		  
+          <!--Projects Table-->
+          <table>
+		  
+            <tr>
+              <td>Project</td>
+              <td> Schedule</td>
+              <td>Actions</td>
+            </tr>
+			
+            <tr>
+              <td> project name </td>
+              <td> project schedule</td>
+              <td>
+                <select name="options">
+                  <option value="viewProject">View Project</option>
+                  <option value="archiveProject">Archive Project</option>
+                  <option value="deleteProject">Delete Project</option>
+                </select>
+              </td>
+            </tr>
+			
+          </table>
+          <!--End of Table-->
+        </fieldset>
+      </form>
+	  
+    </content>
+    <br>
+	
+    <div id="signout">
+      <input id=signoutbutton type="reset" value="Sign Out">
+    </div>
+	
+    <br>
+    <br>
+  </div> <!--End of Building Form-->
+</body>
+
+</html>
